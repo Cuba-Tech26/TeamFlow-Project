@@ -465,8 +465,6 @@ body.dark header .mood i.moon {
 .dashboard-container {
   width: 100%;
   min-height: 200vh;
-  /* background-color:var(--body-color); main background*/
-  /* background-color: red; */
   display: grid;
   grid-template-columns: 1fr;
   display: flex;
