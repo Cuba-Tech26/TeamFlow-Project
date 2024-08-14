@@ -506,7 +506,8 @@ body.dark header .mood i.moon {
   position: absolute;
   grid-template-rows: repeat(2, 1fr);
   grid-template-columns: repeat(3, 1fr);
-  gap: 1px;
+  gap: 10px;
+  padding: 0 1rem;
   top: 18rem;
   width: 100%;
   height: auto;
@@ -514,7 +515,7 @@ body.dark header .mood i.moon {
 
 .sec1 {
   display: flex;
-  padding: 16px 1px 31px 1px;
+  padding: 16px 3px 31px 3px;
   flex-direction: column;
   margin: 0 1.5rem;
   align-items: center;
@@ -580,6 +581,15 @@ body.dark header .mood i.moon {
   border-width: 60%;
   height: 3rem;
 }
+.trak{
+  color: var(--Base-Black, #1B1B1B);
+  font-family: "Proxima Nova";
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: normal;  
+}
+    
 .tracker4 {
   display: flex;
   justify-content: space-evenly;
@@ -592,21 +602,12 @@ body.dark header .mood i.moon {
   /* height: 3rem; */
 }
 
-.tracker h2 {
-  margin-bottom: 1rem;
-  color: var(--Base-Black, #1b1b1b);
-  font-family: "Proxima Nova";
-  font-size: 20px;
-  font-style: normal;
-  font-weight: 500;
-  line-height: normal;
-}
 .tracker2 button {
   color: #fff;
   background-color: #07a32e;
   width: 8rem;
   height: 2.5rem;
-  padding: 4px 12px;
+  padding: 4px 12px;    
   align-items: center;
   border: none;
   border-radius: 10px;
@@ -623,6 +624,9 @@ body.dark header .mood i.moon {
   border-radius: 10px;
   margin-bottom: 0.5rem;
 }
+.tracker button:hover, .tracker2 button:hover{
+background-color: #3facfa;  
+}
 
 #div1 {
   grid-area: 1/1/2/2;
@@ -630,8 +634,8 @@ body.dark header .mood i.moon {
   display: flex;
   align-items: center;
   justify-content: center;
-  min-width: 3rem;
-  height: 30.5vw;
+  min-width: 2.5rem;
+  height: 30.8vw;
   border-radius: 8px;
   border: 1px solid var(--Stroke, #e1e1e1);
 }
@@ -663,7 +667,8 @@ body.dark header .mood i.moon {
   gap: 6rem;
   border-bottom: 1px solid var(--Stroke, #e1e1e1);
   border-width: 60%;
-  padding: 1rem 0;
+  /* padding: 1rem 0; */
+  margin-top: 2rem;
 }
 #div3 {
   grid-area: 2 / 1 / 3 / 3;
@@ -673,8 +678,15 @@ body.dark header .mood i.moon {
   align-items: center;
   justify-content: center;
   min-width: 3rem;
-  /* min-height: 1rem; */
+  min-height: 1rem;
+  /* margin-top: 0.5rem; */
 }
+.sub3{
+  display: flex;
+  flex-direction: column;
+ }
+
+
 .div3a {
   display: flex;
   justify-content: space-between;
@@ -683,6 +695,8 @@ body.dark header .mood i.moon {
   border-bottom: 1px solid var(--border-color);
   border-width: 80%;
   gap: 33rem;
+  padding: 0.5rem 0;
+
  
 }
 .div3a button {
@@ -709,6 +723,16 @@ body.dark header .mood i.moon {
   height: 8vh;
   margin: 1rem 0;
 }
+.sick-leave{
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: flex-start;           
+  gap: 5.3rem;
+  align-self: stretch;
+  height: 3vh;
+  margin: 1rem 0;  
+}
 .div3b p {
   width: 100px;
   color: #686868;
@@ -722,23 +746,24 @@ body.dark header .mood i.moon {
   display: flex;
   flex-direction: row;
   justify-content: center;
-  align-items: flex-start;
+  align-items: flex-start;           
   gap: 5.3rem;
   align-self: stretch;
   height: 3vh;
   margin: 1rem 0;
 }
-
+ 
 #div4 {
   grid-area: 1 / 3 / 3 / 4;
-  /* background-color: var(--primary-color); */
   border: 1px solid var(--border-color);
   border-radius: 10px;
   display: flex;
   align-items: center;
   justify-content: center;
   min-width: 3rem;
-  height: 58rem;
+  gap: 2rem;
+  height: 65rem;
+  padding-bottom: 11rem;
 }
 .sub p {
   color: #434343;
